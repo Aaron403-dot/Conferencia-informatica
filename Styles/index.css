@@ -1,0 +1,607 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px;
+        position: fixed;
+        background-color: rgba(32,39,55,255);
+        box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.5);
+        width: 100%;
+        height: 10%;
+    }
+    
+    .links{
+        display: flex;
+        gap: 1em;
+        flex-direction: row;
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+        font-size: x-large;
+        color: rgb(96, 120, 128);
+        margin-top: 1em;
+    }
+
+    nav{
+        height: 100%;
+    }
+
+    .links li{
+        border-radius: 15px;
+        height: 100%;
+        background-color: rgb(32,39,55);
+        padding: 0.2em;
+        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+    }
+
+    .links li:hover{
+        background-color: rgb(50, 92, 108);
+        color: rgb(104, 139, 173);
+    }
+
+    #Logo{
+        width: auto;
+        height: 100%;
+    }
+
+    body{
+        background-image: url(https://www.firstevent.co.uk/wp-content/uploads/2019/09/Event-marketing-importance1.png);
+        background-position: 90%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .Presentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: auto;
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: 13em;
+        padding-bottom: 18em;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: monospace;
+        font-size: larger;
+    }
+
+    .Presentacion p{
+        font-size: larger;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: auto;
+        background-color: rgba(32,39,55,255);
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: monospace;
+        font-size: larger;
+        padding-bottom: 1em;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    figure{
+        padding-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .Cfamosos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        border: 0.2em solid rgb(109, 137, 152);
+        background-color: rgb(174, 222, 247);
+        color: rgb(28, 34, 48);
+        font-size: large;
+        opacity: 0.5;
+        transition: box-shadow 1s ease-in, background-color 1s ease-in, opacity 1s ease-in;
+    }
+
+    .Cfamosos img{
+        width: 10em;
+        height: 10em;
+        border-radius: 25%;
+        padding: 1%;
+    }
+
+    .Cfamosos:hover{
+        box-shadow: 1em 1em 1em rgba(0,0,0,0.5);
+        background-color: rgb(109, 137, 152);
+        opacity: 1;
+    }
+
+    .registro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: auto;
+        background-color: rgba(32,39,55,255);
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: larger;
+    }
+
+    .registro a{
+        background-color: rgb(174, 222, 247);
+        color: rgb(28, 34, 48);
+        border-radius: 15px;
+        padding: 0.5em;
+        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+    }
+
+    .registro a:hover{
+        background-color: rgb(109, 137, 152);
+        color: rgb(174, 222, 247);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: static;
+        bottom: 100%;
+        padding-top: 1em;
+        background-color: rgb(170, 181, 71);
+        width: 100%;
+        height: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 600px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px;
+        position: fixed;
+        background-color: rgba(32,39,55,255);
+        box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.5);
+        width: 100%;
+        height: 10%;
+    }
+    
+    .links{
+        display: flex;
+        gap: 1em;
+        flex-direction: row;
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+        font-size: x-large;
+        color: rgb(96, 120, 128);
+        margin-top: 1em;
+    }
+
+    nav{
+        height: 100%;
+    }
+
+    .links li{
+        border-radius: 15px;
+        height: 100%;
+        background-color: rgb(32,39,55);
+        padding: 0.2em;
+        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+    }
+
+    .links li:hover{
+        background-color: rgb(50, 92, 108);
+        color: rgb(104, 139, 173);
+    }
+
+    #Logo{
+        width: auto;
+        height: 100%;
+    }
+
+    body{
+        background-image: url(https://www.firstevent.co.uk/wp-content/uploads/2019/09/Event-marketing-importance1.png);
+        background-position: 90%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .Presentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: auto;
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: 13em;
+        padding-bottom: 18em;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: monospace;
+        font-size: larger;
+    }
+
+    .Presentacion p{
+        font-size: larger;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(32,39,55,255);
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: monospace;
+        font-size: larger;
+        padding-bottom: 1em;
+    }
+
+    .intro{display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .intro section{
+        width: 50%;
+    }
+
+    .intro aside{
+        width: 50%;
+    }
+
+    figure{
+        padding-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100%;
+    }
+
+    .famosos{display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;}
+
+    .Cfamosos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        border: 0.2em solid rgb(109, 137, 152);
+        background-color: rgb(174, 222, 247);
+        color: rgb(28, 34, 48);
+        font-size: large;
+        opacity: 0.5;
+        transition: box-shadow 1s ease-in, background-color 1s ease-in, opacity 1s ease-in;
+    }
+
+    .Cfamosos img{
+        width: 10em;
+        height: 10em;
+        border-radius: 25%;
+        padding: 1%;
+    }
+
+    .Cfamosos:hover{
+        box-shadow: 1em 1em 1em rgba(0,0,0,0.5);
+        background-color: rgb(109, 137, 152);
+        opacity: 1;
+    }
+
+    .registro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: auto;
+        background-color: rgba(32,39,55,255);
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: larger;
+    }
+
+    .registro a{
+        background-color: rgb(174, 222, 247);
+        color: rgb(28, 34, 48);
+        border-radius: 15px;
+        padding: 0.5em;
+        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+    }
+
+    .registro a:hover{
+        background-color: rgb(109, 137, 152);
+        color: rgb(174, 222, 247);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: static;
+        bottom: 100%;
+        padding-top: 1em;
+        background-color: rgb(170, 181, 71);
+        width: 100%;
+        height: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 900px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px;
+        position: fixed;
+        background-color: rgba(32,39,55,255);
+        box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.5);
+        width: 100%;
+        height: 10%;
+    }
+    
+    .links{
+        display: flex;
+        gap: 1em;
+        flex-direction: row;
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+        font-size: x-large;
+        color: rgb(96, 120, 128);
+        margin-top: 1em;
+    }
+
+    nav{
+        height: 100%;
+    }
+
+    .links li{
+        border-radius: 15px;
+        height: 100%;
+        background-color: rgb(32,39,55);
+        padding: 1em;
+        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+    }
+
+    .links li:hover{
+        background-color: rgb(50, 92, 108);
+        color: rgb(104, 139, 173);
+    }
+
+    #Logo{
+        width: auto;
+        height: 100%;
+    }
+
+    body{
+        background-image: url(https://www.firstevent.co.uk/wp-content/uploads/2019/09/Event-marketing-importance1.png);
+        background-position: 90%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .Presentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: auto;
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: 13em;
+        padding-bottom: 18em;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: monospace;
+        font-size: larger;
+    }
+
+    .Presentacion p{
+        font-size: larger;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(32,39,55,255);
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: monospace;
+        font-size: larger;
+        padding-bottom: 1em;
+    }
+
+    .intro{display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 2em;
+    }
+
+
+    .intro section{
+        width: 50%;
+    }
+
+    .intro aside{
+        width: 50%;
+    }
+
+    figure{
+        padding-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100%;
+    }
+
+    .famosos{display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;}
+
+    .Cfamosos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        border: 0.2em solid rgb(109, 137, 152);
+        background-color: rgb(174, 222, 247);
+        color: rgb(28, 34, 48);
+        font-size: large;
+        opacity: 0.5;
+        transition: box-shadow 1s ease-in, background-color 1s ease-in, opacity 1s ease-in;
+    }
+
+    .Cfamosos img{
+        width: 10em;
+        height: 10em;
+        border-radius: 25%;
+        padding: 1%;
+    }
+
+    .Cfamosos:hover{
+        box-shadow: 1em 1em 1em rgba(0,0,0,0.5);
+        background-color: rgb(109, 137, 152);
+        opacity: 1;
+    }
+
+    .registro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: auto;
+        background-color: rgba(32,39,55,255);
+        color: rgb(174, 222, 247);
+        padding: 0;
+        padding-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: larger;
+    }
+
+    .registro a{
+        background-color: rgb(174, 222, 247);
+        color: rgb(28, 34, 48);
+        border-radius: 15px;
+        padding: 0.5em;
+        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+    }
+
+    .registro a:hover{
+        background-color: rgb(109, 137, 152);
+        color: rgb(174, 222, 247);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: static;
+        bottom: 100%;
+        padding-top: 1em;
+        background-color: rgb(170, 181, 71);
+        width: 100%;
+        height: 10%;
+    }
+
+}
