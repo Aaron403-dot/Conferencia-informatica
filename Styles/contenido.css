@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+table th{
+    border:1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10%;
+    }
+table td{
+    border:1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10%;
+}
+
+thead{
+    padding: 10%;
+}
+
+table {
+    border: 2px solid;
+}
+
+@media only screen and (max-width: 600px){
+    
+}
+
+@media only screen and (min-width: 600px){
+
+}
+
+@media only screen and (min-width: 900px) {
+
+}
