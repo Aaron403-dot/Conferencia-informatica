@@ -10,13 +10,14 @@ a{
     text-decoration: none;
 }
 
+#contactos{
+    mask-image: inherit;
+    width: 50%;
+}
+
 @media only screen and (max-width: 600px){
     .navbar{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 30px;
         position: fixed;
         background-color: rgba(32,39,55,255);
         box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.5);
@@ -26,14 +27,15 @@ a{
     
     .links{
         display: flex;
-        gap: 1em;
+        flex-direction: row;
+        gap: 15%;
         flex-direction: row;
         list-style: none;
+        width: auto;
         padding: 0%;
-        margin: 0%;
+        margin: 15% 20%;
         font-size: x-large;
         color: rgb(96, 120, 128);
-        margin-top: 1em;
     }
 
     nav{
@@ -44,8 +46,8 @@ a{
         border-radius: 15px;
         height: 100%;
         background-color: rgb(32,39,55);
-        padding: 0.2em;
-        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+        padding: 1% 0%;
+        transition: background-color 0.5s ease-in, color 0.5s ease-in 0.3s;
     }
 
     .links li:hover{
@@ -131,7 +133,7 @@ a{
         color: rgb(28, 34, 48);
         font-size: large;
         opacity: 0.5;
-        transition: box-shadow 1s ease-in, background-color 1s ease-in, opacity 1s ease-in;
+        transition: box-shadow 0.5s ease-in, background-color 0.5s ease-in, opacity 0.5s ease-in;
     }
 
     .Cfamosos img{
@@ -214,11 +216,11 @@ a{
         gap: 1em;
         flex-direction: row;
         list-style: none;
-        padding: 0%;
+        padding-right: 2%;
         margin: 0%;
         font-size: x-large;
         color: rgb(96, 120, 128);
-        margin-top: 1em;
+        margin-top: 5%;
     }
 
     nav{
@@ -229,8 +231,8 @@ a{
         border-radius: 15px;
         height: 100%;
         background-color: rgb(32,39,55);
-        padding: 0.2em;
-        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+        padding: 1em;
+        transition: background-color 0.5s ease-in, color 0.5s ease-in 0.3s;
     }
 
     .links li:hover{
@@ -281,7 +283,7 @@ a{
         align-items: center;
         text-align: center;
         height: 100%;
-        width: 100%;
+        width: auto;
         background-color: rgba(32,39,55,255);
         color: rgb(174, 222, 247);
         padding: 0;
@@ -317,9 +319,9 @@ a{
 
     figure{
         padding-top: 1em;
-        margin-left: 1em;
-        margin-right: 1em;
-        width: 100%;
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+        width: 90%;
     }
 
     .famosos{display: flex;
@@ -332,17 +334,21 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: nowrap;
         border-radius: 15%;
         border: 0.2em solid rgb(109, 137, 152);
         background-color: rgb(174, 222, 247);
         color: rgb(28, 34, 48);
         font-size: large;
+        height: 15em;
+        width: 100%;
+        margin: 0.1em;
         opacity: 0.5;
-        transition: box-shadow 1s ease-in, background-color 1s ease-in, opacity 1s ease-in;
+        transition: box-shadow 0.5s ease-in, background-color 0.5s ease-in, opacity 0.5s ease-in;
     }
 
     .Cfamosos img{
-        width: 10em;
+        width: 80%;
         height: 10em;
         border-radius: 25%;
         padding: 1%;
@@ -425,7 +431,7 @@ a{
         margin: 0%;
         font-size: x-large;
         color: rgb(96, 120, 128);
-        margin-top: 1em;
+        margin-top: 5%;
     }
 
     nav{
@@ -437,7 +443,7 @@ a{
         height: 100%;
         background-color: rgb(32,39,55);
         padding: 1em;
-        transition: background-color 1s ease-in, color 1s ease-in 0.3s;
+        transition: background-color 0.5s ease-in, color 0.5s ease-in 0.3s;
     }
 
     .links li:hover{
@@ -521,9 +527,9 @@ a{
 
     figure{
         padding-top: 1em;
-        margin-left: 1em;
-        margin-right: 1em;
-        width: 100%;
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+        width: 90%;
     }
 
     .famosos{display: flex;
@@ -541,12 +547,15 @@ a{
         background-color: rgb(174, 222, 247);
         color: rgb(28, 34, 48);
         font-size: large;
+        margin: 0 1em;
+        height: 15em;
+        width: 100%;
         opacity: 0.5;
-        transition: box-shadow 1s ease-in, background-color 1s ease-in, opacity 1s ease-in;
+        transition: box-shadow 0.5s ease-in, background-color 0.5s ease-in, opacity 0.5s ease-in;
     }
 
     .Cfamosos img{
-        width: 10em;
+        width: 80%;
         height: 10em;
         border-radius: 25%;
         padding: 1%;
