@@ -8,31 +8,24 @@ table th{
     border:1px solid;
     border-collapse: collapse;
     text-align: center;
-    padding: 10%;
     }
-table td{
-    border:1px solid;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 10%;
-}
 
-thead{
-    padding: 10%;
+table td{
+    border: 1px solid ;
+    padding-left: 1%;
+
 }
 
 table {
     border: 2px solid;
+    margin-bottom: 5%;
 }
 
-@media only screen and (max-width: 600px){
-    
+.hora{
+    font-weight: bolder;
 }
 
-@media only screen and (min-width: 600px){
-
-}
-
-@media only screen and (min-width: 900px) {
-
+.evento{
+    text-decoration: underline;
+    font-style: italic
 }
