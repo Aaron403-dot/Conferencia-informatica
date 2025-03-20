@@ -19,5 +19,125 @@
             </ul>
             </nav>
         </section>
+        <section class="Presentacion">
+            <h1>REGISTRATE AL EVENTO</h1>
+            <p>Regístrate ahora y asegura tu lugar en el evento más esperado del año. ¡No te quedes fuera!</p>
+        </section>
+    </header>
+
+    <article class="formulario info">
+        <form action="#" method="POST" class="formulario">
+            <fieldset class="datos-personales">
+
+                <legend>Información Personal de registro</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" autocomplete="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" required min="6">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha" max="2099-12-31">
+            
+            </fieldset>
+
+            <fieldset class="contacto">
+
+                <legend>Información de contacto</legend>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" required>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" id="direccion" required>
+            
+            </fieldset>
+
+            <fieldset class="lateral-de-field">
+
+                <legend>preferencias del evento</legend>
+
+                <label for="Pais">Pais:</label>
+
+                <select name="Pais" id="Pais">
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="suramerica">Suramerica</option>
+                    <option value="España">España</option>
+                    <option value="inglaterra">Inglaterra</option>
+                </select>
+
+                <section class="separador">
+                    <section class="clic">
+                        <section class="check">
+                            <p>Talleres:</p>
+                            <input type="checkbox" name="talleres1" id="desarollo" value="desarollo web">
+                            <label for="desarollo">desarollo web</label>
+                            <input type="checkbox" name="talleres2" id="IA" value="AI">
+                            <label for="IA">AI</label>
+                            <input type="checkbox" name="talleres3" id="Marketing" value="marketing digital">
+                            <label for="Marketing">marketing digital</label>
+                            <input type="checkbox" name="talleres4" id="Diseño" value="diseño web">
+                            <label for="Diseño">diseño web</label>
+                        </section>
+                        
+                        <section class="radio">
+                            <p>Seccion Principal:</p>
+                            <label for="mañana">
+                                <input type="radio" name="sesion-principal" id="mañana" value="matutina" required> matutina
+                            </label>
+                            <label for="tarde">
+                                <input type="radio" name="sesion-principal" id="tarde" value="Tardia" required> Tairdia
+                            </label>
+                            <label for="noche">
+                                <input type="radio" name="sesion-principal" id="noche" value="Nocturna" required> Nocturna
+                            </label>
+                        </section>
+                    </section>
+    
+                    <aside class="lateral-upload">
+                        <p>Si desea suba su CV aqui</p>
+                        <label for="file" class="file-upload-label">
+                        <section class="file-upload-design">
+                                <svg viewBox="0 0 640 512" height="1em">
+                                    <path
+                                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"
+                                    ></path>
+                                </svg>
+                                <p>Drag and Drop</p>
+                                <p>or</p>
+                                <span class="browse-button">Browse file</span>
+                        </section>
+                            <input id="file" type="file" />
+                        </label>
+                    </aside>
+                </section>
+                
+                <section class="comentarios">
+                    <label for="comentario">deja tu comentario aqui</label>
+                <textarea rows="3" cols="30" id="comentario" name="comentario">
+                    aqui se colocan los comentarios
+                </textarea>
+                </section>
+            </fieldset>
+            <fieldset class="pago">
+                <legend>Información de pago</legend>
+                <label for="Ntarjeta">Numero de tarjeta</label>
+                <input type="text" name="Ntarjeta" id="Ntarjeta" pattern="[0-9]+-[0-9]+-[0-9]+-[0-9]" required>
+                <label for="Dtarjeta">Fecha de caducidad de la tarjeta</label>
+                <input type="month" name="Dtarjeta" id="Dtarjeta" max="2099-12" required>
+            </fieldset>
+            <section class="submit-o-reset">
+                <input type="submit" value="Registrarse" id="Registrarse">
+                <input type="reset" value="limpiar" id="limpiar">
+            </section>
+        </form>
+    </article>
+
+    <footer>
+        <p>© 2025 Conferencia Internacional</p>
+    </footer>
+
 </body>
 </html>
