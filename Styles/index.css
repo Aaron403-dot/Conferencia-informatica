@@ -1,4 +1,4 @@
-
+/* da la informacion universal tanto body de a y de id=contactos*/
 body{
     margin: 0;
     padding: 0;
@@ -17,9 +17,13 @@ a{
     width: auto;
 }
 
+/*establece el tamaño de dispositivos moviles*/
 @media only screen and (max-width: 600px){
+    /* establecen el diseño de la barra superior*/
     .navbar{
+        /*establece que la forma en la que se colocara el contenido dentro del tag "flexbox en pocas palabras caja modular que se adapta al tamñano de los objetos interiores"*/
         display: flex;
+        /* pone que la posicion siempre estara en un lugar fijo aun que se mueva la pantalla*/
         position: fixed;
         background-color: rgba(32,39,55,255);
         box-shadow: 0.5em 0.5em 0.5em rgba(0,0,0,0.5);
@@ -28,13 +32,14 @@ a{
     }
     
     .links{
+        /*declaracion del tipo de display*/
         display: flex;
         flex-direction: row;
         gap: 15%;
-        flex-direction: row;
         list-style: none;
         width: auto;
-        padding: 0%;
+        /* establece tanto el relleno como el margen del tag */
+        padding: 5%;
         margin: 15% 20%;
         font-size: x-large;
         color: rgb(96, 120, 128);
@@ -43,7 +48,7 @@ a{
     nav{
         height: 100%;
     }
-
+    /* establece el diseño del los botones de los enlaces */
     .links li{
         border-radius: 15px;
         height: 100%;
@@ -51,17 +56,18 @@ a{
         padding: 1% 0%;
         transition: background-color 0.5s ease-in, color 0.5s ease-in 0.3s;
     }
-
+    /* interaccion al poner el mouse encima de los botones */
     .links li:hover{
         background-color: rgb(50, 92, 108);
         color: rgb(104, 139, 173);
     }
 
+    /* establece el tamaño del logo */
     #Logo{
         width: auto;
         height: 100%;
     }
-
+    /* mayormente se ocupa de establecer la imagen de fondo de la web */
     body{
         background-image: url(https://www.firstevent.co.uk/wp-content/uploads/2019/09/Event-marketing-importance1.png);
         background-position: 90%;
@@ -69,22 +75,24 @@ a{
         background-attachment: fixed;
         background-size: cover;
     }
-
+    /* seccion final del header que introduce el texto del presentacion de la convencion */
     .Presentacion{
         display: flex;
         flex-direction: column;
+        /* alinean el contendio en una pocision centra */
         justify-content: center;
         align-items: center;
         text-align: center;
+        /* dan tamaño y el color del font a el tag del texto */
         height: 100%;
         width: auto;
         color: rgb(174, 222, 247);
-        padding: 0;
+        /* dan la cantidad de relleno superior e inferior al titulo */
         padding-top: 13em;
         padding-bottom: 18em;
+        /* establecen que los margenes izquierdos y derechos seran automaticos (para centrarlo en el medio) */
         margin-left: auto;
         margin-right: auto;
-        margin: 0;
         font-family: monospace;
         font-size: larger;
     }
@@ -92,7 +100,7 @@ a{
     .Presentacion p{
         font-size: larger;
     }
-
+    /* da las condiciones de estilo del tag de class article "el principal" PD:cambiar nombre a la clase */
     .info{
         display: flex;
         flex-direction: column;
@@ -113,7 +121,7 @@ a{
         font-size: larger;
         padding-bottom: 1em;
     }
-
+    /* establece el diseño de los figures y las imagenes*/
     img{
         width: 100%;
         height: auto;
@@ -124,7 +132,9 @@ a{
         margin-left: 1em;
         margin-right: 1em;
     }
+    /* --------- */
 
+    /* establece el diseño de las cartas de famosos */
     .Cfamosos{
         display: flex;
         flex-direction: column;
@@ -151,7 +161,9 @@ a{
         background-color: rgb(109, 137, 152);
         opacity: 1;
     }
+    /* ----------- */
 
+    /* establece el diseño de la seccion de registro */
     .registro{
         display: flex;
         flex-direction: column;
@@ -183,6 +195,7 @@ a{
         background-color: rgb(109, 137, 152);
         color: rgb(174, 222, 247);
     }
+    /* --------- */
 
     footer{
         display: flex;
@@ -301,23 +314,31 @@ a{
 
     .intro{display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         text-align: center;
         width: 100%;
+        height: auto;
     }
 
-    img{
+    figure img{
         width: 100%;
         height: auto;
     }
 
     .intro section{
         width: 50%;
+        height: fit-content;
     }
 
     .intro aside{
         width: 50%;
+        height: fit-content;
+    }
+
+    #contactos{
+        width: 90%;
     }
 
     figure{
@@ -510,22 +531,23 @@ a{
         padding-bottom: 1em;
     }
 
-    .intro{display: flex;
+    .intro{
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         text-align: center;
         width: 100%;
-        gap: 2em;
+        gap: 15%;
     }
 
 
     .intro section{
-        width: 50%;
+        width: 40%;
     }
 
     .intro aside{
-        width: 50%;
+        width: 40%;
     }
 
     figure{
@@ -609,7 +631,6 @@ a{
         justify-content: center;
         text-align: center;
         position: static;
-        bottom: 100%;
         padding-top: 1em;
         background-color: rgb(170, 181, 71);
         width: 100%;
