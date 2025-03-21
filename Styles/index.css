@@ -100,6 +100,10 @@ a{
     .Presentacion p{
         font-size: larger;
     }
+
+    #contactos{
+        width: 60%;
+    }
     /* da las condiciones de estilo del tag de class article "el principal" PD:cambiar nombre a la clase */
     .info{
         display: flex;
@@ -338,7 +342,7 @@ a{
     }
 
     #contactos{
-        width: 90%;
+        width: 60%;
     }
 
     figure{
@@ -548,6 +552,10 @@ a{
 
     .intro aside{
         width: 40%;
+    }
+
+    #contactos{
+        width: 60%;
     }
 
     figure{
