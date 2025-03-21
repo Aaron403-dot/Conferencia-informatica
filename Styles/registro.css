@@ -1,3 +1,5 @@
+/* diseños generales */
+
 #Registrarse{
     background-color: darkgreen;
     transition: all 0.5s ease-in;
@@ -32,12 +34,13 @@ textarea{
     .formulario{
         width: 100%;
     }
+    /* establece los diseños de la clase formulario */
     .formulario fieldset{
         display: flex;
         flex-direction: column;
         margin-top: 2%;
     }
-
+    /* establece el diseño de la caja de fields de datos personales */
     .datos-personales{
         width: auto;
         display: flex;
@@ -45,6 +48,8 @@ textarea{
         justify-content: space-between;
         align-content: space-between;
     }
+
+
 
     #Pais{
         width: 100%;
@@ -93,14 +98,14 @@ textarea{
         padding: 0%;
         margin: 0%;
     }
-
+    /* establece los detalles de diseño del apartado de subida de CV */
     .lateral-upload{
         display: flex;
         flex-direction: column;
         height: fit-content;
         width: 100%;
     }
-
+    /* todo lo del icono de subir archivo */
     .file-upload-form {
         width: fit-content;
         height: fit-content;
@@ -143,6 +148,10 @@ textarea{
       .browse-button:hover {
         background-color: rgb(14, 14, 14);
       }
+      /* -------------- */
+      
+      /* diseños generales de los botones */
+      
       .submit-o-reset{
         display: flex;
         flex-direction: column;
@@ -159,6 +168,8 @@ textarea{
         background-color: #878787;
         border: 0.2em solid black;
       }
+
+      /* -------------------- */
 }
 
 @media only screen and (min-width: 600px){
@@ -197,11 +208,13 @@ textarea{
 
     .check{
         width: 100%;
+        height: 50%;
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        margin-top: 10%;
+        gap: 5%;
+        margin-top: 5%;
     }
 
     .clic{
